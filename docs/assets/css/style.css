@@ -1,11 +1,11 @@
 :root {
-  --bg: #f3efe7;
-  --surface: #fffaf2;
-  --ink: #1c1b19;
-  --muted: #5a5750;
-  --accent: #116466;
-  --accent-strong: #0a4243;
-  --line: #d9d2c3;
+  --bg: #19110d;
+  --surface: #fff4e8;
+  --ink: #241913;
+  --muted: #6a4b3d;
+  --accent: #c2410c;
+  --accent-strong: #8f2d0b;
+  --line: #e4c8ac;
 }
 
 * {
@@ -21,9 +21,10 @@ body {
 body {
   font-family: "Manrope", sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at 12% 18%, #ffc08e 0, transparent 35%),
-    radial-gradient(circle at 82% 10%, #97e1d6 0, transparent 35%),
-    var(--bg);
+  background: radial-gradient(circle at 15% 8%, rgba(255, 173, 87, 0.32) 0, transparent 30%),
+    radial-gradient(circle at 82% 18%, rgba(232, 78, 27, 0.28) 0, transparent 35%),
+    radial-gradient(circle at 50% 100%, rgba(255, 91, 29, 0.2) 0, transparent 45%),
+    linear-gradient(180deg, #140d0a 0%, #24140f 58%, #110c0a 100%);
   min-height: 100vh;
   line-height: 1.5;
 }
@@ -31,9 +32,12 @@ body {
 .page-bg {
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(90deg, transparent 97%, rgba(17, 100, 102, 0.08) 100%),
-    linear-gradient(0deg, transparent 97%, rgba(17, 100, 102, 0.08) 100%);
-  background-size: 28px 28px;
+  background-image: linear-gradient(90deg, transparent 95%, rgba(255, 160, 97, 0.12) 100%),
+    linear-gradient(0deg, transparent 95%, rgba(255, 160, 97, 0.08) 100%),
+    radial-gradient(circle at 20% 40%, rgba(255, 189, 117, 0.12) 0, transparent 25%),
+    radial-gradient(circle at 72% 72%, rgba(231, 65, 23, 0.1) 0, transparent 24%);
+  background-size: 38px 38px, 38px 38px, auto, auto;
+  opacity: 0.85;
   pointer-events: none;
   z-index: -1;
 }
@@ -52,7 +56,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--ink);
+  color: #ffe7d0;
 }
 
 nav {
@@ -62,7 +66,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--muted);
+  color: #ffd2b0;
   font-weight: 600;
 }
 
@@ -140,7 +144,7 @@ h1 {
 
 .panel {
   margin-top: 1rem;
-  background: rgba(255, 250, 242, 0.9);
+  background: rgba(255, 244, 232, 0.93);
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: clamp(1.1rem, 2vw, 2rem);
