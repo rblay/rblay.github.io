@@ -1,89 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="wim">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafael Blay | Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio landing page for Rafael Blay, Data Scientist moving into Product Management."
-    />
+    <title>Rafael Blay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Montserrat:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-bg" aria-hidden="true"></div>
-
-    <header class="site-header">
-      <a class="brand" href="#top">Rafael Blay</a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <p class="tag">Data Scientist to Product Manager</p>
-        <h1>Data Scientist moving into Product Management.</h1>
-        <p class="subtitle">
-          I enjoy football analytics, playing tennis (lefty), and slow-cooking ribs for 12
-          hours in Brazilian churrascos.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="mailto:rafacblay@gmail.com">Email Me</a>
+    <main class="page">
+      <section class="hero" aria-labelledby="name">
+        <div class="hero-top">
+          <h1 id="name">Rafael Blay</h1>
+          <button class="theme-ball" type="button" aria-label="Cycle theme"></button>
         </div>
-      </section>
-
-      <section id="about" class="panel">
-        <h2>About</h2>
         <p>
-          Data Scientist with 5 years of experience, moving into Product Management. I like
-          football analytics, playing tennis (lefty), and Balatro.
+          Product Manager/Data Scientist.<br>I like football analytics, playing tennis and cooking ribs for 12 hours
+        </p>
+        <p class="main-contact">
+          <a href="mailto:rafacblay@gmail.com">rafacblay@gmail.com</a>
+          <a class="icon-link" href="https://github.com/rblay" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2.2a9.8 9.8 0 0 0-3.1 19.1c.5.1.7-.2.7-.5v-2c-2.7.6-3.3-1.1-3.3-1.1-.4-1-.9-1.3-.9-1.3-.8-.6.1-.6.1-.6.9.1 1.4.9 1.4.9.8 1.3 2.1 1 2.6.8.1-.6.3-1 .6-1.2-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.8-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1 .8-.2 1.7-.3 2.5-.3s1.7.1 2.5.3c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.8 1 1.7 1 2.8 0 3.8-2.3 4.6-4.5 4.9.4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A9.8 9.8 0 0 0 12 2.2Z"
+              />
+            </svg>
+          </a>
+          <a class="icon-link" href="https://linkedin.com/in/rblay" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5 2.5 2.5 0 0 0 4.98 3.5ZM3 9.5h4v11H3v-11Zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.7 2.4 4.7 5.6v5.8h-4v-5.2c0-1.5-.1-3.3-2.1-3.3s-2.3 1.5-2.3 3.2v5.3h-4v-11Z"
+              />
+            </svg>
+          </a>
         </p>
       </section>
 
-      <section id="projects" class="panel">
-        <h2>Selected Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Algolritmo</h3>
-            <p>My football analytics blog, where I share analysis, ideas, and experiments.</p>
-            <a href="https://algolritmo.com" target="_blank" rel="noreferrer" aria-label="Open Algolritmo">View case</a>
-          </article>
-          <article class="project-card">
-            <h3>Pacafoot</h3>
-            <p>A WIP browser football game I am currently developing.</p>
-            <a href="#" aria-label="Open Pacafoot">View case</a>
-          </article>
-          <article class="project-card">
-            <h3>Tennis Booking System</h3>
-            <p>
-              A quick project to check court availability and weather at Hyde Park.
-            </p>
-            <a href="#" aria-label="Open Tennis Booking System">View case</a>
-          </article>
-        </div>
-      </section>
+      <div class="baseline" aria-hidden="true"></div>
 
-      <section id="contact" class="panel">
-        <h2>Contact</h2>
-        <p>
-          Reach out for freelance work, full-time roles, or collaboration.
-        </p>
-        <ul class="contact-list">
-          <li><a href="mailto:rafacblay@gmail.com">rafacblay@gmail.com</a></li>
-          <li><a href="https://github.com/rblay" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/rblay" target="_blank" rel="noreferrer">LinkedIn</a></li>
-        </ul>
+      <section class="projects" aria-label="Projects">
+        <a class="project-item" href="https://algolritmo.com" target="_blank" rel="noreferrer">
+          <span class="project-title">Algolritmo</span>
+          <span class="project-desc">football analytics blog</span>
+        </a>
+        <a class="project-item" href="https://github.com/rblay/pacafoot" target="_blank" rel="noreferrer">
+          <span class="project-title">Pacafoot</span>
+          <span class="project-desc">WIP football simulation game</span>
+        </a>
+        <a class="project-item" href="https://tennis-dashboard-p8ze.onrender.com/" target="_blank" rel="noreferrer">
+          <span class="project-title">Court Finder</span>
+          <span class="project-desc">Find open Hyde Park Courts without rain</span>
+        </a>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
