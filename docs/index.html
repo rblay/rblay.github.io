@@ -17,7 +17,16 @@
       <section class="hero" aria-labelledby="name">
         <div class="hero-top">
           <h1 id="name">Rafael Blay</h1>
-          <button class="theme-ball" type="button" aria-label="Cycle theme"></button>
+          <div class="theme-ball-wrap">
+            <button
+              class="theme-ball"
+              type="button"
+              aria-label="Cycle theme"
+              aria-describedby="theme-ball-tooltip theme-ball-hint"
+            ></button>
+            <span class="theme-ball-tooltip" id="theme-ball-tooltip" role="tooltip">Change grand slam</span>
+            <span class="theme-ball-hint" id="theme-ball-hint" hidden>Try the ball. It changes the grand slam.</span>
+          </div>
         </div>
         <p>
           Product Manager/Data Scientist.<br>I like football analytics, playing tennis and cooking ribs for 12 hours
