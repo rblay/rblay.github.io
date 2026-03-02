@@ -14,11 +14,11 @@ Push to `main`; GitHub Pages serves the site from the `docs/` folder.
 
 ## Cloudflare Web Analytics
 
-This site is prepared for Cloudflare Web Analytics through `docs/analytics.js`.
+This site uses Cloudflare Web Analytics through the standard beacon snippet embedded in the HTML pages.
 
 1. In the Cloudflare dashboard, go to `Web Analytics` and add your site hostname.
 2. Copy the site token from `Manage site`.
-3. Paste the token into `CF_ANALYTICS_TOKEN` in `docs/analytics.js`.
+3. Replace the token in the Cloudflare beacon snippet in `docs/index.html` and `docs/404.html`.
 4. Push to `main`.
 
 Cloudflare's current docs say manual setup works for sites not proxied through Cloudflare, including static sites hosted elsewhere, by adding the beacon before the closing `body` tag:
