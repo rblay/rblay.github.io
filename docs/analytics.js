@@ -1,4 +1,4 @@
-const CF_ANALYTICS_TOKEN = "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc75fe3ead054eda9faecc021636a2c1"}'></script><!-- End Cloudflare Web Analytics -->";
+const CF_ANALYTICS_TOKEN = "dc75fe3ead054eda9faecc021636a2c1";
 
 if (CF_ANALYTICS_TOKEN) {
   const analyticsScript = document.createElement("script");
